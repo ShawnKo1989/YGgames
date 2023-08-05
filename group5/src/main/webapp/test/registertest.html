@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.outterbox {
+	border: 3px solid #000; 
+	width: 500px;
+}
+table {border-collapse: collapse;}
+
+.bottom {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.bottom input{
+	margin-left: 10px;
+}
+form {
+	width: 163px;
+	margin: auto;
+	height: 40px;
+}
+</style>
+</head>
+<body>
+	<div class="outterbox">
+	<table>
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" placeholder="아이디"/></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="text" placeholder="비밀번호" /></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" placeholder="이름" /></td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td><input type="text" placeholder="나이" /></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type="text" placeholder="이메일" /><span>@</span><input type="text" placeholder="직접입력" /></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td><input type="radio" name="gender"/><span>남자</span><input type="radio" name="gender" /><span>여자</span></td>
+		</tr>
+		<tr>
+			<td>취미</td>
+			<td><input type="radio" name="hobby" /><span>운동</span><input type="radio" name="hobby" /><span>영화</span><input type="radio" name="hobby" /><span>게임</span><input type="radio" name="hobby" /><span>책</span></td>
+		</tr>
+		<tr>
+			<td>서식지</td>
+			<td><select name="home">
+				<option value="">서식지 선택</option>
+				<option value="seoul">서울</option>
+				<option value="daejeon">대전</option>
+				<option value="busan">부산</option>
+				<option value="gwangju">광주</option>
+				<option value="incheon">인천</option>
+				<option value="jeju">제주</option>
+				<option value="abroad">국외</option>
+			</select></td>
+		</tr>
+	</table>
+	<div class="bottom">
+		<span>개인정보취급방침에 동의함</span><input type="radio" name="agreement" /><span>동의함</span><input type="radio" name="agreement" /><span>동의안함</span>
+	</div>
+	<form action="next_page.html" class="submitarea">
+		<input type="submit" value="제출하기" /><input type="submit" value="내용 비우기" />
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+	function is_alpha(c) {
+		if(c >= 'a' && c<='z' || c<='Z' && c>='A'){return true;}
+		return false;
+	}
+	function check() {
+		let id = frm.id.value;
+		let pw = frm.pw.value;
+		if(id.length<8){
+			alert("아이디는 8글자 이상 입력해주세요");
+			return false;
+		}
+		let ch = pw.charAt(0);
+		if(!is_alpha(ch)){
+			alert("패스워드는 영문자로 시작해주세요");
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body>
+	<form name="frm" action="Ex22p2.html">
+		ID : <input type="text" name="id" /><br /> 
+		PW : <input	type="password" name="pw" /> <br />
+		<input type="submit" value="로그인" onclick="return check();" />
+	</form>
+</body>
+</html>

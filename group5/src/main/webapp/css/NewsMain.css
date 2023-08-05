@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+body {
+	background-color: black;
+}
+
+nav {
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+}
+
+footer {
+	background-color: white;
+	width: 100%;
+	height: 150px;
+	border: 1px solid black;
+}
+
+main {
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+a {
+	text-decoration-line: none;
+}
+
+.newsMain {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+
+.newsLeft {
+	width: 742.25px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.newsRight {
+	width: 742.25px;
+	margin-left: 10px;
+	height: auto;
+}
+
+.newsMainImg {
+	width: 742.25px;
+	height: 417.5px;
+}
+
+.newsMainImg:hover {
+	filter: brightness(113%);
+}
+
+.subtitle {
+	color: rgba(245, 245, 245, 0.6);
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	flex: 1 1 0%;
+	flex-direction: column;
+	display: grid -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.subNews {
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+li {
+	margin-bottom: 30px;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	padding-top: 20px;
+}
+
+.subNewsItem {
+	list-style: outside none none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%
+}
+
+article {
+	width: 100%;
+	margin-top: 0px;
+	position: relative;
+}
+
+.subNewsFlex {
+	display: flex;
+}
+
+.subNewsImg {
+	width: 200px;
+	height: 115px;
+	margin-right: 30px;
+}
+
+.subNewsImg:hover {
+	filter: brightness(120%);
+}
+
+.subNewsContent {
+	flex: 1 1 0%;
+	flex-direction: column;
+}
+
+.subNewsTitle {
+	transition: color 125mx ease-in-out 0s;
+	color: rgb(245, 245, 245);
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	display: grid -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.subNewsSubtitle {
+	margin: 14px 0px;
+	transition: color 125mx ease-in-out;
+	color: rgba(245, 245, 245, 0.6);
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+}
+
+.see {
+	margin-right: auto;
+	color: rgb(255, 255, 255);
+}
+
+.See {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.See:hover {
+	border-bottom: 1px solid white;
+}
+.pageChange{
+	text-align:center;
+	margin-bottom:100px;
+	float:center;
+}
+.stay{
+	color:rgb(255,255,255);
+	cursor:default;
+}
+.change{
+	color:rgba(255,255,255,0.6);
+}
+.change:hover{
+	color:rgba(255,255,255,1);
+	font-weight:700;
+}

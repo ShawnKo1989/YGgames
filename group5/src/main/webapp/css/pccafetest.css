@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+body {
+	/* 	background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+	background-attachment: fixed;
+	/* 	background: black; */
+	/* 	background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+	/* 	-webkit-transform: rotate(90deg); */
+	/* 	-moz-transform: rotate(90deg); */
+	color: #fff;
+	background-color: rgb(18, 18, 18);
+	/* 	background-size: cover; */
+	font-family: Brutal, sans-serif;
+}
+
+main {
+	width: 100%;
+	height: 900px;
+}
+/* div { */
+/* 	border: 1px solid white; */
+/* } */
+/* #map { */
+/* 	border: 5px solid black; */
+/* 	width: 1196px; */
+/* 	height: 500px; */
+/* } */
+
+#top {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#outer_top {
+	background: #3c3c3c;
+	border: 3px solid black;
+	height: 180px;
+	width: 1200px;
+	border-radius: 40px;
+	margin: 5% auto 0px;
+	display: flex;
+}
+
+#logobox {
+	font-size: 18px;
+	font-family: Brutal, sans-serif;
+	margin: auto;
+	width: 90px;
+	height: 88px;
+}
+
+#logobox img {
+	width: 90px;
+	height: 88px;
+	background: transparent;
+	filter: invert(100%);
+}
+
+#outer_top h6 {
+	color: white;
+	margin-top: 64px;
+	font-size: 35px;
+	font-weight: bold;
+	background: transparent;
+}
+
+.search_box {
+	padding: 0 20px;
+}
+
+.search_box select {
+	border: 2px solid #3c3c3c;
+	color: white;
+	background-color: #202020;
+	border-radius: 20px;
+	margin: 20px auto 0px;
+	width: 150px;
+	height: 45px;
+}
+
+.search_boxes {
+	position: relative;
+	padding: 0 20px;
+	margin: auto;
+	display: flex;
+}
+
+#pac-input {
+	border: 2px solid #3c3c3c;
+	background-color: #202020;
+	padding: 0 20px;
+	border-radius: 20px;
+	margin: 17px auto;
+	width: 300px;
+	height: 45px;
+}
+
+#searchbtn {
+	border: 2px solid #3c3c3c;
+	color: white;
+	background-color: #202020;
+	border-radius: 20px;
+	width: 80px;
+	height: 50px;
+}
+
+#selectbar {
+	display: flex;
+	position: relative;
+	margin: 30px 50px 30px 0;
+	width: 700px;
+	height: 55px;
+	color: white;
+}
+
+#selectbar button {
+	color: white;
+}
+
+#selectbar span {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#selectbar form {
+	margin-top: 15px;
+}
+
+.select_items {
+	background: #202020;
+	border: 1px solid #aaaaaa;
+	height: 23px;
+	border-radius: 20px;
+	margin: auto 10px;
+	text-align: center;
+}
+
+.select_items :hover {
+	transition: 0.5s ease out;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.select_items img {
+	width: 11px;
+	height: 11px;
+}
+
+#cafelist {
+	margin: 0 auto;
+	width: 1206px;
+}
+
+#cafe_inner {
+	margin: auto;
+	width: 100%;
+	height: 700px;
+}
+
+.buttons {
+	position: relative;
+	padding: 1rem 0;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.buttons a {
+	color: white;
+	font-size: 20px;
+	margin-left: 15px;
+	text-dacoration: none;
+}
+
+.buttons a:hover {
+	color: goldenrod;
+}
+
+.button {
+	padding: 0 1rem;
+	font-size: 1.2rem;
+	color: #333;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.button.active, .button:hover {
+	color: #1f975d;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.prev {
+	position: absolute;
+	left: -2.5rem;
+}
+
+.next {
+	position: absolute;
+	right: -2.5rem;
+}
+
+ion-icon {
+	padding-top: 0.05rem;
+}
+
+table {
+	margin: 5% auto 0;
+	border-collapse: collapse;
+}
+
+table, td {
+	border: 1px solid #b4b4b4;
+	background: #202020;
+}
+
+td {
+	font-family: Brutal, sans-serif;
+	width: 400px;
+	text-align: start;
+	padding: 8px;
+}
+
+.contents:hover {
+	background: #464646;
+	transition: .3s;
+}
+
+td img {
+	position: relative;
+}
+
+.find_btn {
+	border-radius: 10px;
+	cursor: pointer;
+	background: #202020;
+	outline: none;
+}
+
+td span {
+	color: white;
+	font-size: 15px;
+}
+
+td img {
+	float: left;
+}
+.map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
+.map_wrap {position:relative;width:100%;height:500px;}
+#menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
+.bg_white {background:#fff;}
+#menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#menu_wrap .option{text-align: center;}
+#menu_wrap .option p {margin:10px 0;}  
+#menu_wrap .option button {margin-left:5px;}
+#placesList li {list-style: none;}
+#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+#placesList .item span {display: block;margin-top:4px;}
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#placesList .item .info{padding:10px 0 10px 55px;}
+#placesList .info .gray {color:#8a8a8a;}
+#placesList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#placesList .info .tel {color:#009900;}
+#placesList .item .markerbg {float:left;position:absolute;width:36px; height:37px;margin:10px 0 0 10px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+#placesList .item .marker_1 {background-position: 0 -10px;}
+#placesList .item .marker_2 {background-position: 0 -56px;}
+#placesList .item .marker_3 {background-position: 0 -102px}
+#placesList .item .marker_4 {background-position: 0 -148px;}
+#placesList .item .marker_5 {background-position: 0 -194px;}
+#placesList .item .marker_6 {background-position: 0 -240px;}
+#placesList .item .marker_7 {background-position: 0 -286px;}
+#placesList .item .marker_8 {background-position: 0 -332px;}
+#placesList .item .marker_9 {background-position: 0 -378px;}
+#placesList .item .marker_10 {background-position: 0 -423px;}
+#placesList .item .marker_11 {background-position: 0 -470px;}
+#placesList .item .marker_12 {background-position: 0 -516px;}
+#placesList .item .marker_13 {background-position: 0 -562px;}
+#placesList .item .marker_14 {background-position: 0 -608px;}
+#placesList .item .marker_15 {background-position: 0 -654px;}
+#pagination {margin:10px auto;text-align: center;}
+#pagination a {display:inline-block;margin-right:10px;}
+#pagination .on {font-weight: bold; cursor: default;color:#777;}

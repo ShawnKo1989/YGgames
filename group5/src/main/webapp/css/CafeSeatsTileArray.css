@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+	background-color: black;
+}
+a{
+ text-decoration:none;
+ color:white;
+ cursor:pointer;
+}
+.seat {
+	color: white;
+	margin: 30px;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.conditionTrue {
+	background-color: #323232;
+	width: 178px;
+	height: 140px;
+	border: 2px solid black;
+	margin-top: 2px;
+	display:inline-flex;
+	cursor: pointer;
+	color:white;
+	padding: 3px 0px;
+	font-size:17px;
+	font-weight:400;
+}
+.conditionTrue:hover {
+	background-color: #4c4c4c;
+}
+
+.conditionFalse0 {
+	background-color: #447637;
+	width: 178px;
+	height: 140px;
+	display:inline-flex;
+	margin-top: 2px;
+	border: 2px solid black;
+}
+
+.conditionFalse1 {
+	background-color: #612D92;
+	width: 178px;
+	height: 140px;
+	margin-top: 2px;
+	border: 2px solid black;
+	display:inline-flex;
+}
+
+.seatTop {
+	width: 100%;
+	text-align: left;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel= "stylesheet" href="style2.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="login-form">
+	<h1>5조 테스트 로그인화면</h1>
+	<form action="">
+		<div class="int-area">
+			<input type= "text" name ="id" id="id"
+			autocomplete="off" required>
+			<label for = "id">USER NAME</label>
+		</div>
+		<div class="int-area">
+			<input type= "password" name ="pw" id="pw"
+			autocomplete="off" required>
+			<label for = "pw">PASSWORD</label>
+		</div>
+		<div class="btn-area">
+			<button type="submit">LOGIN</button>
+		</div>
+	</form>
+	<div class = "caption">
+		<a href="">Forgot Password?</a>
+	</div>
+	</section>
+	
+	<script>
+		let id = $('#id');
+		let pw = $('#pw');
+		let btn = $('#btn');
+		
+		$(btn).on('click', function() {
+			if($(id).val() == ""){
+				$(id).next('label').addClass('warning');
+				setTimeout(function() {
+					$('label').removeClass('warning');
+				},1500);
+			}
+			else if($(pw).val() == "") {
+				$(p).next('label').addClass('warning');
+				setTimeout(function() {
+					$('label').removeClass('warning');
+				},1500);
+			}
+		});
+		
+	</script>
+</body>
+</html>

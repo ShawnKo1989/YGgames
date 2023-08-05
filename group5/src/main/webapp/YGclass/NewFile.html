@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="main.jsp">
+	ID: <input type="text" name="id"/><br/>
+	PW: <input type="text" name="pw"/><br/>
+	<input type="submit" value="로그인"/>
+</form>
+<script>
+	function getParamMap(queryString) {
+		let splited = queryString.replace("?", "").split(/[=?&]/);
+		let param = {};
+			for(let i = 0; i < splited.length; i++) {
+				param[splited[i]] = splited[++i];
+			}
+		return param;
+	}
+	let queryString = location.search;
+	const paramObj = getParamMap(queryString);
+	let id = paramObj.id;
+	let pw = paramObj.pw;
+	if(id == "SW" && pw == "1234") {
+		alert(id + "님 안녕하세요! 로그인되었습니다.")
+	}else {
+		alert("로그인 정보가 잘못되었습니다! 다시 로그인 하세요!")
+		location.href = "main.jsp"
+	}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	/*  	border: 1px solid black;  */
+	
+}
+.outterbox {
+	margin: 10% auto 0;
+	border: 1px solid black;
+	width: 800px;
+	height: 500px;
+}
+
+.loginbox {
+	margin: 20% auto 0;
+	align-items: center;
+	width: 800px;
+	height: 150px;
+	display: flex;
+}
+
+.logobox {
+	width: 150px;
+	height: 150px;
+	margin-left: 70px;
+}
+
+.logobox img {
+	width: 150px;
+	height: 150px;
+}
+
+.inputarea {
+	margin: auto 10px;
+	width: 300px;
+	height: 150px;
+}
+
+.buttonarea {
+	margin: auto 65px auto 0;
+	width: 150px;
+	height: 150px;
+}
+
+.innerInput {
+	font-size: 20px;
+	border: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	outline: none;
+	border-bottom: 1px solid black;
+	float: right;
+	width: 250px;
+	height: 70px;
+	margin: auto;
+}
+
+.innerInput::placeholder {
+	margin-bottom: 0px;
+}
+
+#check {
+	font-size: 20px;
+	width: 150px;
+	height: 150px;
+	background: white;
+}
+.radioarea {
+	margin-left: 300px;
+	margin-top: 15px;
+}
+</style>
+</head>
+<body>
+	<div class="outterbox">
+		<div class="loginbox">
+			<div class="logobox">
+				<img
+					src="https://w7.pngwing.com/pngs/980/413/png-transparent-apple-logo-business-iphone-apple-heart-computer-logo.png" />
+			</div>
+			<div class="inputarea">
+				<input type="text" class="innerInput" name="id" placeholder="아이디" />
+				<input type="password" class="innerInput" name="pw"
+					placeholder="비밀번호" />
+			</div>
+			<div class="buttonarea">
+				<input type="submit" id="check" name="check" value="로그인" />
+			</div>
+		</div>
+		<div class="radioarea">
+			<span>아이디</span><input type="radio" name="status" />저장함 <input type="radio" name="status" />저장안함
+		</div>
+		</div>
+</body>
+</html>

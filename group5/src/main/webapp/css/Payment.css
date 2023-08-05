@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color:#ffffff;
+}
+
+.cafeNav1 {
+	background-color: #343434;
+	padding: 10px 10px;
+	margin-top: 0px;
+	height: auto;
+	display: flex;
+	width:1903px;
+}
+.cafeNav2{
+	width:1903px;
+}
+.manager {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.cafeNavTop {
+	color: #EAEAEA;
+}
+
+.showCafe {
+	font-size: 12px;
+}
+
+.cafeNavLeft {
+	float: left;
+	text-align: center;
+}
+
+.cafeNavRight {
+	float: right;
+	text-align: center;
+}
+
+.firCafeNavSec {
+	float: left;
+	writing-mode: vertical-lr;
+}
+
+.cafeNavSec {
+	margin: 0 auto;
+	padding: 5px 5px;
+	color: #EAEAEA;
+	padding-top:20px;
+	background-color: #383838;
+	height: 125px;
+	display: flex;
+}
+
+.cafeSeats {
+	width: 453px;
+	display: flex;
+}
+
+.btnItem {
+	width: 1056px;
+	display: flex;
+}
+
+.cafeNavSeatsItems {
+	width: 60px;
+	height: 78px;
+	border: 0.3px solid black;
+	text-align: center;
+	background-color: #363636;
+	margin: 1px;
+	float: left;
+	font-size:50px;
+	font-weight:1000;
+	padding-top:25px;
+}
+
+.secCafeNavBtn {
+	float:right;
+	margin-top: 5px;
+	margin-left: 5px;
+	background-color: #666666;
+	color: #D3D3D3;
+	width: 350px;
+	height: 75px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.secCafeNavBtn:hover {
+	background-color: #3D3D3D;
+}
+.seats{
+	margin: 0 auto;
+	display:flex;
+	
+}
+.payment {
+	display: flex;
+	margin-top: 2px;
+	text-align: center;
+	padding-bottom:15px;
+	font-weight:1000;
+}
+
+.totalNaverPay {
+	border: 0.5px solid white;
+	color: #F5FAFE;
+	width: 507px;
+	height: 120px;
+	background-color: #22CE6F;
+	padding: 10px;
+}
+
+.totalKakaoPay {
+	padding: 10px;
+	border: 0.5px solid white;
+	color: #3C1E1E;
+	width: 507px;
+	height: 120px;
+	background-color: #FAE100;
+}
+
+.totalCard {
+	padding: 10px;
+	border: 0.5px solid white;
+	color: #F5FAFE;
+	width: 507px;
+	height: 120px;
+	background-color: #4AAFE8;
+}
+
+.totalfee {
+	padding: 10px;
+	border: 0.5px solid white;
+	color: #3C1E1E;
+	width: 507px;
+	height: 120px;
+	background-color: #FFC0CB;
+}
+
+.whatPay {
+	float: left;
+	float: top;
+	padding: 0px;
+	font-size: 18px;
+	font-weight:1000;
+	display:flex;
+}
+
+.pay {
+	text-align: center;
+	font-size: 25px;
+	justify-content : center;
+	padding:0px;
+	align-items:center;
+}
+
+.Chart {
+	display: flex;
+	padding: 0px;
+}
+
+.lineChart {
+	width: 1265px;
+	border: 0.5px solid silver;
+	float: auto;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+
+.doughnutChart {
+	width: 632.5px;
+	border: 0.5px solid silver;
+	float: auto;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.thTop{
+	border-top:2px solid #DDDDDD;
+	border-bottom:1px solid #EDEDED;
+	background-color:#F2F2F2;
+}
+table{
+	table-layout:fixed;
+	width:1897.5px;
+	height:250px;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.dateSet{
+	font-size:16px;
+	font-weight:800;
+	text-align:center;
+	border:0.4px solid #F2F2F2;
+}
+.tdPay{
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	border:0.4px solid #F2F2F2;
+}

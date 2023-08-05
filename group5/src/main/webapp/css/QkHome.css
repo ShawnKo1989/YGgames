@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+}
+
+.bx-wrapper {
+	border: 0;
+	background: #000;
+	box-shadow: none;
+	margin: 0;
+}
+
+.jhSlider>div {
+	background-size: 270%;
+	bottom: 0px;
+	height: 904.203px;
+}
+
+.jhSlider>div.sliderTransition {
+	transition: background-size 1.5s;
+}
+
+.jhSlider>div:hover {
+	background-size: 300%;
+}
+
+#carImg {
+	background-image: url("https://cdn2.unrealengine.com/Epic+Games+Node%2Fue-alt-1920x1080-e653a4a4dae65307fd2420076abe44bb71b22f06.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#carImg:hover {
+	opacity: 1;
+}
+
+#twoPeople {
+	background-image: url("https://cdn2.unrealengine.com/Epic+Games+Node%2Ffn-1920x1080-05e434e24b3170bc6cc6003c102270ee4cde3a75.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#twoPeople:hover {
+	opacity: 1;
+}
+
+#carFight {
+	background-image: url("https://cdn2.unrealengine.com/rl-f2p-hero-epic-adjust-gradient-1920x1080-982990639.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#carFight:hover {
+	opacity: 1;
+}
+
+#storeImg {
+	background-image: url("https://cdn2.unrealengine.com/epichomepage-artboard-1-1920x1080-329693365.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#storeImg:hover {
+	opacity: 1;
+}
+
+#robot {
+	background-image: url("https://cdn2.unrealengine.com/Epic+Games+Node%2Frr-1920x1080-5a3f8bce26f45d078c2738cf5140ad18be39041c.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#robot:hover {
+	opacity: 1;
+}
+
+#greenMan {
+	background-image: url("https://cdn2.unrealengine.com/Epic+Games+Node%2Fut-1920x1080-416b0b679e572854df52c39154aff5945328c04d.jpg?resize=1&w=1920");
+	background-color: #000;
+	opacity: 0.75;
+	transition: opacity 1s, background-size 1s;
+}
+
+#greenMan:hover {
+	opacity: 1;
+}
+
+.whatMenu {
+	color: #fff;
+	font-family: Brutal_Bold, sans-serif;
+	font-size: 3.8em;
+	font-weight: 600;
+	line-height: .875em;
+	margin-top: 0;
+	text-align: left;
+	text-transform: uppercase;
+	width: auto;
+	position: relative;
+	top: 650px;
+	left: 100px;
+}
+
+#잠시네비 {
+	height: 52px;
+	width: 100%;
+	background-color: #2A2A2A;
+}
+
+.aBtn {
+	width: 124px;
+	height: 56px;
+	text-align: center;
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	transition: background-color 0.8s, color 0.8s;
+	cursor: pointer;
+}
+
+.aBtn:hover {
+	background-color: white;
+	color: black;
+}

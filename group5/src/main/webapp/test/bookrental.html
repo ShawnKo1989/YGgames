@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.outterbox {
+	width: 960px;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+.logobox {
+	margin-bottom: 5px;
+	border: none;
+	border-bottom: 1px solid #000;
+	margin: 0 auto;
+	width: 940px;
+}
+.outterbox img {
+	width: 150px;
+	height: 150px;
+}
+.innercenter {
+	display: flex; 
+}
+.list {
+	border: none;
+	border-right: 1px solid #000;
+	width: 250px;
+	height: 600px;
+}
+#searchbtn {
+	background: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 220px;
+	height: 80px;
+}
+.searchingarea {
+	margin-left: 15px;
+	margin-top: 15px;
+	width: 700px;
+	
+}
+.searchingarea button {
+	background: none;
+	width: 60px;
+	height: 35px;
+}
+#searchbar {
+	margin-right: 5px;
+	width: 600px;
+	height: 27px;
+}
+.selectarea {
+	font-size: 14px;
+	float: right;
+	width: 190px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.selectarea select {
+	float: right;
+}
+.innerbot {
+	margin-top: 50px;
+}
+.innerlist {
+	align-items: center;
+	display: flex;
+	border: 1px solid black;
+	width: 670px;
+	height: 80px;
+}
+
+.title {
+	margin-left: 100px;
+}
+.status {
+	margin-left: 125px;
+}
+.btnarea {
+	width: 180px;
+	float: right;
+	margin-left: 126px;
+}
+.viewbtn {
+	margin-left: 50px;
+}
+</style>
+</head>
+<body>
+	<div class="outterbox">
+		<div class="logobox">
+			<img src="https://w7.pngwing.com/pngs/980/413/png-transparent-apple-logo-business-iphone-apple-heart-computer-logo.png" />
+		</div>
+		<div class="innercenter">
+			<div class="list">
+				<button id="searchbtn">도서검색</button>
+			</div>
+			<div class="searchingarea">
+				<input type="text" id="searchbar" placeholder="도서명 검색" /><button>검색</button>
+			<div class="selectarea">
+				<span>정렬방식</span><select name="view">
+					<option value="">선택하세요</option>
+					<option value="오름차순">도서명 오름차순</option>
+					<option value="내림차순">도서명 내림차순</option>
+				</select>
+			</div>
+			<div class="innerbot">
+			<div class="innerlist">
+				<span>1</span>
+				<div class="title">
+					<span>도서명</span>
+				</div>
+				<div class="status">
+					<span>대출중</span>
+				</div>
+				<div class="btnarea">
+				<button class="viewbtn">보기</button>
+				</div>
+			</div>
+			<div class="innerlist">
+				<span>2</span>
+				<div class="title">
+					<span>도서명</span>
+				</div>
+				<div class="status">
+					<span>대출가능</span>
+				</div>
+				<div class="btnarea">
+				<button class="viewbtn">보기</button>
+				<button class="rentalbtn">대출</button>
+				</div>
+			</div>
+			<div class="innerlist">
+				<span>3</span>
+				<div class="title">
+					<span>도서명</span>
+				</div>
+				<div class="status">
+					<span>대출가능</span>
+				</div>
+				<div class="btnarea">
+				<button class="viewbtn">보기</button>
+				<button class="rentalbtn">대출</button>
+				</div>
+			</div>
+			<div class="innerlist">
+				<span>4</span>
+				<div class="title">
+					<span>도서명</span>
+				</div>
+				<div class="status">
+					<span>대출가능</span>
+				</div>
+				<div class="btnarea">
+				<button class="viewbtn">보기</button>
+				<button class="rentalbtn">대출</button>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

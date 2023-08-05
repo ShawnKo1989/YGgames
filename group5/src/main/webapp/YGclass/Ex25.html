@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제이쿼리 연습</title>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+	function calc() {
+// 		alert("!");
+		// "730원" ----> 730 
+		let value1 = $("#unit_price").text();
+		value1 = value1.replace("원","");
+		value1 = Number(value1);
+		
+		let value2 = Number($("#qty").val());
+		// 730 * 1 ---> 730
+		let price = value1 * value2;
+		// 730 -------> "730원"
+		price = price + "원";
+		$("#price").html("<b>" + price + "</b>");
+	}
+	$(function(){
+		$("#btn_plus").click(function() {
+			let value1 = Number($("#qty").val());
+			$("#qty").val(value1+1);
+			calc();
+		});
+		$("#btn_minus").click(function() {
+			let value1 = Number($("#qty").val());
+			$("#qty").val(value1-1);
+			calc();
+		});
+		calc();
+	});
+</script>
+<style>
+	td > img {width: 160px;}
+	table {border-collapse: collapse;}
+	th, td {border: 1px solid grey; padding: 8px;}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>품목</th>
+			<th>단가</th>
+			<th>수량</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td><img src="/images/cupnoodle.png"/></td>
+			<td id="unit_price"><b>730원</b></td>
+			<td>
+				<button id="btn_plus"> + </button>
+				<input type="text" id="qty" value=1 />
+				<button id="btn_minus">-</button>
+			</td>
+			<td id="price"></td>
+	</tr>
+	</table>
+</body>
+</html>

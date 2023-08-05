@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+	background: rgba(0, 0, 0, 0.93);
+	font-family: Brutal, sans-serif;
+	color: #fff;
+	min-height: 75%;
+}
+.outline{
+	text-align: center;
+	padding: 10px;
+	margin: 3% auto 7%;
+	width: 1000px;
+	height: 600px;
+}
+.selectbar{
+	display: inline-block;
+	background: #3c3c3c;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 40px;
+	margin:7% auto;
+	width: 800px;
+	height: 200px;
+}
+.selectbar:hover{
+	transition: .5s;
+	color: #aaaaaa;
+	background: #464646;
+}
+
+.selectLabel{
+	margin-top: 90px;
+	font-size: 30px;
+	font-weight: 700;
+}
