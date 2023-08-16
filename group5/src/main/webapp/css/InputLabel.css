@@ -10,24 +10,24 @@ html {
 strong, b {
   font-weight: 700;
 }
-/* body { */
+body {
 /*   color: #fff; */
-/*   margin: 0; */
-/*   font-size: 0.875rem; */
-/*   font-family: Brutal, sans-serif; */
-/*   font-weight: 400; */
-/*   line-height: 1.25rem; */
-/*   letter-spacing: 0.1px; */
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Brutal, sans-serif;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.1px;
 /*   background-color: rgba(0, 0, 0, 0.93); */
-/* } */
+}
 @media print {
-/*   body { */
-/*     background-color: #fff; */
-/*   } */
-/* } */
-/* body::backdrop { */
-/*   background-color: rgba(0, 0, 0, 0.93); */
-/* } */
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: rgba(0, 0, 0, 0.93);
+}
 
 .MuiPaper-root {
   color: #fff;

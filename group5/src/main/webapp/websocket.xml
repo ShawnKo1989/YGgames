@@ -26,6 +26,6 @@
     </servlet-mapping>
     <context-param>
         <param-name>CHAT-ADDR</param-name>
-        <param-value>ws://localhost:9090/Group5</param-value>
+        <param-value>ws://210.114.1.134:9090/group5</param-value>
     </context-param>
 </web-app>

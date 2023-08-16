@@ -4,9 +4,9 @@
 <%@ page import="java.sql.*" %>
 <%
 String driver = "oracle.jdbc.driver.OracleDriver";
-String url = "jdbc:oracle:thin:@localhost:1521:xe";
-String dbId = "hr";
-String dbPw = "hr";
+String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+String dbid = "hr";
+String dbpw = "hr";
 %>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@ String dbPw = "hr";
 	Connection conn = null;
 	try{
 		Class.forName(driver);
-		conn = DriverManager.getConnection(url, dbId, dbPw);
+		conn = DriverManager.getConnection(url, dbid, dbpw);
 		out.println("JDBC 접속 성공적");		
 	}catch (Exception e){
 		out.println("접속실패");

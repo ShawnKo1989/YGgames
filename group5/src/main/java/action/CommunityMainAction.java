@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.PostDAO;
-import DTO.PostDTO;
+import dao.PostDAO;
+import dto.PostDTO;
 
 public class CommunityMainAction implements Action {
 
@@ -20,7 +20,7 @@ public class CommunityMainAction implements Action {
 		List<PostDTO> hotPost = postDao.hotPost();
 		request.setAttribute("allPost", allPost);
 		request.setAttribute("hotPost", hotPost);
-		RequestDispatcher rd = request.getRequestDispatcher("Community.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/communitypage/Community.jsp");
 		rd.forward(request, response);
 		
 	}

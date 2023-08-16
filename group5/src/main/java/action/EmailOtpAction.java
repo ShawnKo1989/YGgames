@@ -32,7 +32,7 @@ public class EmailOtpAction implements Action{
 		}
 		System.out.println("confirmNum 확인중 ..."+confirmNum);
 		request.setAttribute("confirmNum", confirmNum);
-		request.getRequestDispatcher("emailOTP.jsp").forward(request,response);
+		request.getRequestDispatcher("/signuppage/emailOTP.jsp").forward(request,response);
 		
 	}
 	String mathRandom() {

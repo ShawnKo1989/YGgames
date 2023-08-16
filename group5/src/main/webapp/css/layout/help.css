@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.header h1 {
+	font-size: 40px;
+	line-height: 60px;
+	font-weight: 400;
+}
+
+.header form {
+	flex: 1 1 auto;
+	display: flex;
+}
+
+.header .navRow, .rsvArea .pickers, .timepicker {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 30px 0;
+	gap: 20px;
+}
+
+.header .navRow a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #484848;
+	color: #ffffff;
+	border-radius: 4px;
+	height: 80px;
+}
+
+.header .navRow a img {
+	width: 70px;
+	height: 70px;
+	margin: 5px;
+}
+
+.rsvArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.pickers .picker input {
+	display: none;
+}
+
+.pickers .picker {
+	padding: 0 10px;
+}
+
+.rsvArea .timetable h4 {
+	text-align: center;
+}
+
+.timepicker label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	padding: 13px 0 11px;
+}
+
+.pickers .picker label.checked {
+	background-color: dimgrey;
+	border: 1px solid lightgrey;
+}
+
+.supporterpicker label, .contactpicker label, .timepicker label {
+	background-color: lightgrey;
+	color: #141414;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 4px;
+}
+
+.supporterpicker, .contactpicker {
+	margin: 30px 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.supporterpicker label, .contactpicker label {
+	display: flex;
+	align-items: center;
+	height: 44px;
+	gap: 5px;
+	padding: 0 0 0 2px;
+}
+
+.contactpicker label {
+	justify-content: center;
+}
+
+#supportPicker .supporterpicker label.inactive {
+	background-color: darkslategrey;
+	color: dimgrey;
+}
+
+.supporterpicker label img {
+	width: 40px;
+	height: 40px;
+	margin: 2px;
+}
+
+.visitor {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 30px;
+	gap: 10px;
+}
+
+.visitor input {
+	padding: 5px 10px;
+}
+
+textarea[name="description"] {
+	resize: none;
+	grid-column: 2/3;
+	height: 100px;
+	border-radius: 4px;
+}
+
+.btnRow {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.redBtn {
+	width: 120px;
+	height: 44px;
+	background-color: indianred;
+}
+
+.rsvChkArea {
+	margin: 40px 0 80px;
+	width: 450px;
+}
+
+#rsvChk {
+	display: flex;
+	gap: 20px;
+}
+
+#rsvChk * {
+	flex: 1 1 auto;
+	padding: 10px 10px;
+}
+
+.rsvChk .btnRow a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000000;
+}
+
+.mapArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.mapArea #map {
+	width: 800px;
+	height: 440px;
+	border-color: #ffffff;
+}
+
+.mapArea #btnDragMap {
+	height: 40px;
+}

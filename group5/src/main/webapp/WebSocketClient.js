@@ -1,7 +1,7 @@
 // websocketClient.js
 
 // WebSocket 서버에 연결
-const socket = new WebSocket("ws://localhost:9090/websocket");
+const socket = new WebSocket("ws://210.114.1.134:9090/websocket");
 
 // WebSocket 연결 성공 시 실행될 이벤트 핸들러
 socket.onopen = function() {

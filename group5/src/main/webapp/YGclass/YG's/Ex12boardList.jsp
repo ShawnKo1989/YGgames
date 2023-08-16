@@ -2,13 +2,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	String driver = "oracle.jdbc.driver.OracleDriver";
-	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String dbId = "testw8";
-	String dbPw = "pass1234";
+	String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+	String dbid = "testw8";
+	String dbpw = "pass1234";
 %>
 <%
 	Class.forName(driver);
-	Connection conn = DriverManager.getConnection(url, dbId, dbPw);
+	Connection conn = DriverManager.getConnection(url, dbid, dbpw);
 %>
 <!DOCTYPE html>
 <html>

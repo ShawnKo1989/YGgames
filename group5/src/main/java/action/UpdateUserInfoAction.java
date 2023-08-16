@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.UserDAO;
+import dao.UserDAO;
 
 public class UpdateUserInfoAction implements Action{
 
@@ -28,7 +28,7 @@ public class UpdateUserInfoAction implements Action{
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		request.getRequestDispatcher("signup2.jsp").forward(request,response);
+		request.getRequestDispatcher("/signuppage/signup2.jsp").forward(request,response);
 	}
 
 }

@@ -6,8 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.UserDAO;
-import DTO.UserDTO;
+import dao.UserDAO;
+import dto.UserDTO;
 
 public class ConnUpdateAction implements Action{
 
@@ -24,7 +24,8 @@ public class ConnUpdateAction implements Action{
 		int result = userDao.userConnectivity((int)request.getSession().getAttribute("reg_no"));
 		if(result == 0) {
 			System.out.println("접속상태 업데이트 성공");
-			response.sendRedirect("main.jsp");
+			request.getRequestDispatcher("/storepage/main.jsp")
+			.forward(request,response);
 		}else {
 			System.out.println("접속상태 업데이트 실패");
 		}

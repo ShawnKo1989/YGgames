@@ -18,12 +18,12 @@
 	public Connection getConnection() throws Exception{
 		Connection conn;
 		String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String dbId = "temp";
-		String dbPw = "1234";
+		String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+		String dbid = "group5";
+		String dbpw = "abcd1234";
 		
 		Class.forName(driver); // jdbc 드라이버 로딩
-		conn = DriverManager.getConnection(url, dbId, dbPw);
+		conn = DriverManager.getConnection(url, dbid, dbpw);
 					//DB접속으로 시도--> Connection 객체를 리턴
 		
 		return conn;

@@ -4,6 +4,8 @@ body{
 	padding:0px;
 	margin-left:150px;
 	margin-right:150px;
+	background-color:black;
+	color:white;
 }
 .mainImg {
 	display:block;
@@ -21,6 +23,7 @@ main {
 	font-weight: 20px;
 	letter-spacing: 0.2px;
 	margin-bottom: 150px;
+	background-color:black;
 }
 .contentImg {
 	width: 1000px;

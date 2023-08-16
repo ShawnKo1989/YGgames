@@ -20,15 +20,15 @@ import javax.servlet.http.HttpServletResponse;
 public class Sql extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public String driver = "oracle.jdbc.driver.OracleDriver";
-	public String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	public String dbId = "temp";
-	public String dbPw = "1234";
+	public String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+	public String dbid = "group5";
+	public String dbpw = "abcd1234";
     public Sql() {
         super();
     }
     public void getUpdate(String sql) throws Exception{
 		Class.forName(driver);
-		Connection conn = DriverManager.getConnection(url,dbId,dbPw);
+		Connection conn = DriverManager.getConnection(url,dbid,dbpw);
 		Statement stmt = conn.createStatement();
 		stmt.executeUpdate(sql);
 		
@@ -37,14 +37,14 @@ public class Sql extends HttpServlet {
 	}
 	public ResultSet getQuery(String sql) throws Exception{
 		Class.forName(driver);
-		Connection conn = DriverManager.getConnection(url,dbId,dbPw);
+		Connection conn = DriverManager.getConnection(url,dbid,dbpw);
 		Statement stmt = conn.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
 		return rs;
 	}
 	public ResultSet getPrepare(String sql) throws Exception{
 		Class.forName(driver);
-		Connection conn = DriverManager.getConnection(url,dbId,dbPw);
+		Connection conn = DriverManager.getConnection(url,dbid,dbpw);
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		ResultSet rs = pstmt.executeQuery();
 		return rs;

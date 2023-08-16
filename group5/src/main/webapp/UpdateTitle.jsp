@@ -7,7 +7,7 @@
 <%
 request.setCharacterEncoding("utf-8");
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","project5","qwer1234");
+Connection con = DriverManager.getConnection("jdbc:oracle:thin:@210.114.1.134:1521:xe","project5","qwer1234");
 String title = request.getParameter("title");
 String sql = "UPDATE my_room SET now_style=? WHERE reg_no=" + session.getAttribute("reg_no");
 PreparedStatement pstmt = con.prepareStatement(sql);

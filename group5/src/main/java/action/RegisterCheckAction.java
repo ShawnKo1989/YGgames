@@ -6,8 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.UserDAO;
-import DTO.UserDTO;
+import dao.UserDAO;
+import dto.UserDTO;
 
 public class RegisterCheckAction implements Action{
 
@@ -24,9 +24,10 @@ public class RegisterCheckAction implements Action{
 		int result = userDao.registerCheck(userEmail);
 		
 		if(result == 1) {
-			request.getSession().setAttribute("messageType", "경고메시지");
-			request.getSession().setAttribute("messageContent", "존재하지않는 회원입니다.");
-			response.sendRedirect("signin.jsp");
+			request.setAttribute("messageType", "경고메시지");
+			request.setAttribute("messageContent", "존재하지않는 회원입니다.");
+			request.getRequestDispatcher("/signinpage/signin.jsp")
+			.forward(request,response);
 		}else {
 			request.getRequestDispatcher("Controller?command=PasswordCheckAction")
 				.forward(request,response);

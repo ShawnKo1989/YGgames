@@ -36,7 +36,7 @@ body {
 </style>
 </head>
 <body>
-	<jsp:include page="NavBar2.jsp" />
+	<jsp:include page="../outframe/NavBar2.jsp" />
 	<div class="bcg">
 		<div class="page-content tos container">
 			<h1>
@@ -310,6 +310,6 @@ body {
 			</p>
 		</div>
 	</div>
-	<jsp:include page="BottomFooter.jsp" />
+	<jsp:include page="../outframe/BottomFooter.jsp" />
 </body>
 </html>

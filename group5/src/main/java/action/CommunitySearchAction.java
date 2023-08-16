@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.PostDAO;
-import DTO.PostDTO;
+import dao.PostDAO;
+import dto.PostDTO;
 
 public class CommunitySearchAction implements Action {
 
@@ -24,7 +24,7 @@ public class CommunitySearchAction implements Action {
 		request.setAttribute("searchPost",searchPost);
 		request.setAttribute("totalPosts", totalPosts);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("CommunitySearch.jsp?searching="+searchData);
+		RequestDispatcher rd = request.getRequestDispatcher("/communitypage/CommunitySearch.jsp?searching="+searchData);
 		rd.forward(request, response);
 	}
 }

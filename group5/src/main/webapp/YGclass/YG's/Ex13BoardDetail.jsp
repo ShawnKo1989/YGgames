@@ -4,14 +4,14 @@
 <%!
 	public Connection getConnection(){
 		String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String dbId = "testw8";
-		String dbPw = "pass1234";
+		String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+		String dbid = "testw8";
+		String dbpw = "pass1234";
 		
 		Connection conn = null;
 		try{
 			Class.forName(driver);	// JDBC 드라이버 로딩.
-			conn = DriverManager.getConnection(url, dbId, dbPw);
+			conn = DriverManager.getConnection(url, dbid, dbpw);
 								// DB접속 시도 ---> Connection 객체 리턴.
 		} catch (Exception e) {
 			e.printStackTrace();

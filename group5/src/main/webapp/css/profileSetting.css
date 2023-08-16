@@ -118,7 +118,7 @@ div {
 	background-color:rgba(0, 0, 0, 0.12);
 	border-radius: 5px;
 	width: 309px;
-	height: 59px;
+	height: 55px;
 }
 #account_info button {
 	border: 0;
@@ -158,7 +158,7 @@ div {
 	border: 1px solid #3c3c3c;
 	position: absolute;
 	margin: auto;
-	width: 370px;
+	width: 320px;
 	height: 60px;
 	border-radius: 8px;
 }
@@ -188,7 +188,7 @@ div {
 }
 .userBirthInput{
 	width: 200px;
-    height: 45px;
+    height: 5px;
     border-radius: 5px;
     padding: 15px;
 }
@@ -228,8 +228,8 @@ div {
 	border: 1px solid #3c3c3c;
 	position: relative;
 	margin: auto;
-	width: 370px;
-	height: 60px;
+	width: 340px;
+	height: 55px;
 	border-radius: 8px;
 }
 .post {
@@ -238,7 +238,7 @@ div {
 	border: 1px solid #3c3c3c;
 /* 	position: absolute; */
 	width: 200px;
-	height: 100%;
+	height: 55px;
 	border-radius: 8px;
 }
 .postal_code input:focus + label span,
@@ -608,8 +608,7 @@ div {
 	opacity: 1;
 }
 .pop_input_area {
-	margin-left: 35px;
-	margin-top: 40px;
+	margin: 40px auto;
 	border: 1px solid black;
 	width: 353px;
 	height: 60px;
@@ -630,8 +629,8 @@ div {
 	float: left;
 	border: 0;
 	outline: none;
-	width: 261px;
-	height: 57px;
+	width: 235px;
+	height: 17px;
 	padding: 30px 20px 10px 5px;
 }
 .pop_inner2 label{

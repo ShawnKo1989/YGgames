@@ -7,13 +7,13 @@
 %>
 <% 
 	String driver = "oracle.jdbc.driver.OracleDriver";
-	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String dbId = "temp";
-	String dbPw = "1234"; 
+	String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+	String dbid = "group5";
+	String dbpw = "abcd1234"; 
 %>
 <%
 	Class.forName(driver);
-	Connection conn = DriverManager.getConnection(url, dbId, dbPw);
+	Connection conn = DriverManager.getConnection(url, dbid, dbpw);
 	String sql = "DELETE FROM board WHERE bno= ?";
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	pstmt.setInt(1, bno);

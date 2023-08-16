@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.PayMentDAO;
-import DTO.PayMentDTO;
+import dao.PayMentDAO;
+import dto.PayMentDTO;
 
 public class PaymentSelectAction implements Action {
 
@@ -59,7 +59,7 @@ public class PaymentSelectAction implements Action {
 		
 		request.setAttribute("today", today);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("PayMentSelectDate.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/incomepage/PayMentSelectDate.jsp");
 		rd.forward(request, response);
 	}
 

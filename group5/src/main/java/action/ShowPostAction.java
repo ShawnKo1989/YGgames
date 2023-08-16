@@ -8,10 +8,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.PostDAO;
-import DAO.ReplyDAO;
-import DTO.PostDTO;
-import DTO.ReplyDTO;
+import dao.PostDAO;
+import dao.ReplyDAO;
+import dto.PostDTO;
+import dto.ReplyDTO;
 
 public class ShowPostAction implements Action {
 
@@ -33,7 +33,7 @@ public class ShowPostAction implements Action {
 		request.setAttribute("showPosts",showPosts);
 		request.setAttribute("showReply",showReply);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("CommunityShowBoard.jsp?showPostNo="+showPostNo);
+		RequestDispatcher rd = request.getRequestDispatcher("/communitypage/CommunityShowBoard.jsp?showPostNo="+showPostNo);
 		rd.forward(request, response);
 		
 	}

@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.BoardDAO;
-import DTO.BoardDTO;
+import dao.BoardDAO;
+import dto.BoardDTO;
 
 public class PostWriteAction implements Action {
 
@@ -42,7 +42,7 @@ public class PostWriteAction implements Action {
 		request.setAttribute("content",content);
 		request.setAttribute("updateValue",updateValue);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("CommunityPostWrite.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/communitypage/CommunityPostWrite.jsp");
 		rd.forward(request, response);
 	}
 

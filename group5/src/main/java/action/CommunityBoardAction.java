@@ -8,9 +8,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.BoardDAO;
-import DAO.PostDAO;
-import DTO.PostDTO;
+import dao.BoardDAO;
+import dao.PostDAO;
+import dto.PostDTO;
 
 public class CommunityBoardAction implements Action {
 
@@ -21,6 +21,7 @@ public class CommunityBoardAction implements Action {
 		int postsPerPage = 10;
 		if(request.getParameter("pageNo")!=null) {
 			pageNo = Integer.parseInt(request.getParameter("pageNo"));
+			System.out.println(pageNo);
 		}
 		
 		PostDAO postDao = PostDAO.getInstance();
@@ -35,7 +36,7 @@ public class CommunityBoardAction implements Action {
 		request.setAttribute("postList",postList);
 		request.setAttribute("totalPosts",totalPosts);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("CommunityBoard.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/communitypage/CommunityBoard.jsp");
 		rd.forward(request, response);
 		
 	}

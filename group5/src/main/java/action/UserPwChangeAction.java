@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.SettingDAO;
+import dao.SettingDAO;
 
 public class UserPwChangeAction implements Action{
 
@@ -25,24 +25,28 @@ public class UserPwChangeAction implements Action{
 		int result = -1;
 		
 		if(!userNewPw1.equals(userNewPw2)) {
-			request.getSession().setAttribute("messageType", "경고메시지");
-			request.getSession().setAttribute("messageContent", "새비밀번호가 일치하지 않습니다. 다시입력해주세요");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "경고메시지");
+			request.setAttribute("messageContent", "새비밀번호가 일치하지 않습니다. 다시입력해주세요");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 		}else if(userNewPw1.equals(userPw)) {
-			request.getSession().setAttribute("messageType", "경고메시지");
-			request.getSession().setAttribute("messageContent", "이전 비밀번호와 같은 비밀번호입니다. 다시입력해주세요");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "경고메시지");
+			request.setAttribute("messageContent", "이전 비밀번호와 같은 비밀번호입니다. 다시입력해주세요");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 		}else if(!loginedPw.equals(userPw)){
-			request.getSession().setAttribute("messageType", "경고메시지");
-			request.getSession().setAttribute("messageContent", "현재 사용중인 비밀번호가 잘못됐습니다. 다시입력해주세요");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "경고메시지");
+			request.setAttribute("messageContent", "현재 사용중인 비밀번호가 잘못됐습니다. 다시입력해주세요");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 		}else {
 			result = settingDao.settingUserPw(userNewPw1, userRegNo);
 		}
 		if(result == 0) {
-			request.getSession().setAttribute("messageType", "알림메시지");
-			request.getSession().setAttribute("messageContent", "수정되었습니다.");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "알림메시지");
+			request.setAttribute("messageContent", "수정되었습니다.");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 			return;
 		}
 	}

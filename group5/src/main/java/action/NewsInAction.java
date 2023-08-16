@@ -7,8 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.NewsDAO;
-import DTO.NewsDTO;
+import dao.NewsDAO;
+import dto.NewsDTO;
 
 public class NewsInAction implements Action {
 
@@ -22,7 +22,7 @@ public class NewsInAction implements Action {
 		request.setAttribute("news",news);
 		request.setAttribute("newsNo",newsNo);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("NewsIn.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/newspage/NewsIn.jsp");
 		rd.forward(request, response);
 	}
 }

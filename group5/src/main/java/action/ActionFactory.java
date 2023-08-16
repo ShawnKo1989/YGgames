@@ -22,6 +22,7 @@ public class ActionFactory {
 		case "UserPwChangeAction" : action = new UserPwChangeAction();break;
 		case "AllSessionLogoutAction" : action = new AllSessionLogoutAction();break;
 		case "UserWithdrawalAction" : action = new UserWithdrawalAction();break;
+		case "SettingMoveAction" : action = new SettingMoveAction(); break;
 		case "community":action = new CommunityMainAction();break; 
 		case "communityBoard":action = new CommunityBoardAction();break;
 		case "showPostAction":action = new ShowPostAction();break;
@@ -35,6 +36,15 @@ public class ActionFactory {
 		case "paymentSelect":action = new PaymentSelectAction();break;
 		case "news":action = new NewsMainAction();break;
 		case "newsIn":action = new NewsInAction();break;
+		
+		// help
+		case "reservationForm":	action = new ActionReservationForm();	break;
+		case "reservation":	action = new ActionReservation();	break;
+		case "search":	action = new ActionSearch();	break;
+		case "viewFaq":	action = new ActionViewFaq();	break;
+		case "contactUsForm":	action = new ActionContactUsForm();	break;
+		case "contactUs":	action = new ActionContactUs();	break;
+		case "contactChat":	action = new ActiontContactChat();	break;
 		}
 		return action;
 	}

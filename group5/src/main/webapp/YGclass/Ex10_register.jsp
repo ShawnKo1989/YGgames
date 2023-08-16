@@ -5,9 +5,9 @@
     
     <%
 	    String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String dbId = "temp";
-		String dbPw = "1234";
+		String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+		String dbid = "group5";
+		String dbpw = "abcd1234";
     %>
     <%
     	String id = request.getParameter("id");
@@ -16,7 +16,7 @@
     	String test = "test";
     	
     	Class.forName(driver);
-    	Connection conn = DriverManager.getConnection(url,dbId,dbPw);
+    	Connection conn = DriverManager.getConnection(url,dbid,dbpw);
     	
     	String sql = "INSERT INTO register(id,pw,name,email) VALUES(?,?,?,?)";
     	PreparedStatement pstmt = conn.prepareStatement(sql);

@@ -17,21 +17,18 @@ public class WebSocketServer {
 
     @OnOpen		//클라이언트 접속 시 실행
     public void onOpen(Session session) {
-        System.out.println("WebSocket 연결 ");
         sessions.add(session);
     }
 
     @OnMessage	//Message를 받을 때 실행
     public void onMessage(Session session, String message) {
         // 받은 메시지와 닉네임 정보를 문자열 형태로 묶어서 클라이언트에게 전송
-        String composedMessage =  message;
 
-        broadcast(composedMessage);
+        broadcast(message);
     }
 
     @OnClose
     public void onClose(Session session) {
-        System.out.println("WebSocket 종료");
         sessions.remove(session);
     }
 

@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.SettingDAO;
+import dao.SettingDAO;
 
 public class UserProfileUpdateAction implements Action{
 
@@ -43,14 +43,16 @@ public class UserProfileUpdateAction implements Action{
 		int result = settingDao.settingAddress(userAddressFinal, userPostalCode, userGender, userName, userType, userBirth ,userRegNo);
 		
 		if(result == 0) {
-			request.getSession().setAttribute("messageType", "알림메시지");
-			request.getSession().setAttribute("messageContent", "수정되었습니다.");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "알림메시지");
+			request.setAttribute("messageContent", "수정되었습니다.");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 			return;
 		}else {
-			request.getSession().setAttribute("messageType", "경고메시지");
-			request.getSession().setAttribute("messageContent", "잘못된 정보입니다.다시입력해주세요");
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("messageType", "경고메시지");
+			request.setAttribute("messageContent", "잘못된 정보입니다.다시입력해주세요");
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp")
+			.forward(request,response);
 		}
 	}
 

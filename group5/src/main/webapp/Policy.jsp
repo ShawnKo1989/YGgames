@@ -29,7 +29,7 @@ body {
 </style>
 </head>
 <body>
-	<jsp:include page="NavBar2.jsp" />
+	<jsp:include page="../outframe/NavBar2.jsp" />
 	<div class="page-content container">
 		<h1>
 			<span>QKYG Games 개인정보처리방침</span>
@@ -369,6 +369,6 @@ body {
 			<br> <span>&nbsp;</span>
 		</p>
 	</div>
-	<jsp:include page="BottomFooter.jsp" />
+	<jsp:include page="../outframe/BottomFooter.jsp" />
 </body>
 </html>

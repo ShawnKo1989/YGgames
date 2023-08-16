@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import DAO.CafeDAO;
-import DTO.CafeDTO;
+import dao.CafeDAO;
+import dto.CafeDTO;
 
 
 @WebServlet("/CafeServlet")
@@ -40,7 +40,7 @@ public class CafeServlet extends HttpServlet {
 		String event = (String)request.getParameter("event");
 		System.out.println(point + " " + pass + " " + pay + " " + event);
 		try {
-			cafeList = cDao.getCafe(pageNum,point,pass,pay,event);
+			cafeList = cDao.getKakoCafe(pageNum,point,pass,pay,event);
 			System.out.println("dto에 저장되었슴");
 		}catch(Exception e) {
 			e.printStackTrace();

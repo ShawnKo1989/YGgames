@@ -16,7 +16,7 @@ public class CafeReservePayAction implements Action {
 			
 		request.setAttribute("seatNumber", seatNumber);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("CafeSeatsReservePay.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/cafeseatpage/CafeSeatsReservePay.jsp");
 		rd.forward(request, response);
 		
 	}

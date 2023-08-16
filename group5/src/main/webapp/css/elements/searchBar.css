@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+main .searchBarForm {
+	display: flex;
+}
+main .searchBarForm .searchBar {
+	margin: 10px 0;
+	flex: 1 1 auto;
+	padding: 12px 50px;
+	border: 1px solid rgba(20, 20, 20, .32);
+	border-radius: 4px;
+	color: #141414;
+}

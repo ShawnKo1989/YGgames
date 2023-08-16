@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.chatArea {
+	width: 400px;
+	height: 600px;
+	border: 1px solid grey;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+	gap:10px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.messageContainer {
+	flex: 1 0 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	border: 1px dotted grey;
+}
+.clientMessage, .myMessage, .serverMessage {
+	padding: 10px;
+	border-radius: 10px;
+}
+.clientMessage, .myMessage {
+	max-width: 40%;
+}
+
+.clientMessage {
+	align-self: flex-start;
+	background-color: #DCF8C6;
+}
+.myMessage {
+	align-self: flex-end;
+	background-color: #DCF8C6;
+}
+
+.serverMessage {
+	background-color: #F3F3F3;
+}
+.chatForm {
+	flex: 0 0 40px;
+	display: flex;
+	gap: 10px;
+}
+.messageInput {
+	flex: 1 0 280px;
+	overflow: auto;
+	resize: none;
+	padding: 10px;
+}
+.chatForm button {
+	flex: 1 0 50px;
+}

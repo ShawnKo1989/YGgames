@@ -15,11 +15,11 @@ public class UserDAO {
 	public UserDAO() {
 		try {
 			String Driver = "oracle.jdbc.driver.OracleDriver";
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String dbID = "temp";
+			String url = "jdbc:oracle:thin:@210.114.1.134:1521:xe";
+			String dbid = "group5";
 			String dbPassword = "1234";
 			Class.forName(Driver);
-			conn = DriverManager.getConnection(url, dbID, dbPassword);
+			conn = DriverManager.getConnection(url, dbid, dbPassword);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -11,7 +11,7 @@ public class InquiryAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("PayMentInquiry.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/incomepage/PayMentInquiry.jsp");
 		rd.forward(request, response);
 	}
 }

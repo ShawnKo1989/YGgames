@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.UserDAO;
-import DTO.UserDTO;
+import dao.UserDAO;
+import dto.UserDTO;
 @WebServlet("/SigninServlet")
 public class SigninServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.PayMentDAO;
+import dao.PayMentDAO;
 
 public class PaymentAction implements Action{
 
@@ -44,7 +44,7 @@ public class PaymentAction implements Action{
 		
 		
 		
-		RequestDispatcher rd = request.getRequestDispatcher("PayMent.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/incomepage/PayMent.jsp");
 		rd.forward(request, response);
 		
 	}

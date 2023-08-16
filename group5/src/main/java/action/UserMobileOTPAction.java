@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.SettingDAO;
+import dao.SettingDAO;
 
 public class UserMobileOTPAction implements Action{
 
@@ -22,9 +22,10 @@ public class UserMobileOTPAction implements Action{
 		
 		if(mobileOTPNum != null || mobileOTPNum != "") {
 			System.out.println("전송성공");
-			request.getSession().setAttribute("userPhoneNum",userPhoneNum);
-			request.getSession().setAttribute("mobileOTPNum", mobileOTPNum);
-			response.sendRedirect("profileSetting.jsp");
+			request.setAttribute("userPhoneNum",userPhoneNum);
+			request.setAttribute("mobileOTPNum", mobileOTPNum);
+			request.getRequestDispatcher("/settingpage/profileSetting.jsp").
+			forward(request,response);
 		}
 		
 		
